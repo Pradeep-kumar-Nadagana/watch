@@ -1,0 +1,230 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio </title> 
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/90a2977bf2.js" crossorigin="anonymous"></script>
+</head>
+ <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img  src="./images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home </a></li>
+                    <li> <a href="#about">About </a></li>
+                    <li> <a href=" #projects">Projects</a></li>
+                    <!-- <li> <a href="#portfolio">Portfolio </a></li> -->
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, i'm <span>Pradeep</span><br> from Andhra Pradesh</h1>
+            </div>
+        </div> 
+    </div>
+    <!----------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Seeking an IT position that values continuous learning and professional development, 
+                        allowing me to stay current with industry trends and best practices.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+                <p class="tab-links"onclick="opentab('experience')">Interst</p>
+                <!-- <p class="tab-links"onclick="opentab('education')">Education</p>
+             -->
+            </div>
+            <div class="tab-contents active-tab" id="skills"> 
+                <ul>
+                    <li><span>Programming</span><br>java</li>
+                    <li><span>Web Development</span><br>HTML & CSS, javascript</li>
+                    <li><span>React.js</span><br>Web interface</li>
+                    <li><span>Database</span><br>Mysql</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>B.Tech</B> in Electronics and
+                        Communication Engineering</B></span><br>Dr. B.R. Ambedkar University,Srikakulam</li>
+                    <li><span>2023</span><br></li>
+                    <li><span>cgpa 6.72</span><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents"id="experience">
+                <ul>
+                    <li><span><i class="fa-solid fa-book"></i></span><br>Books</li>
+                    <li><span><i class="fa-solid fa-music"></i></span><br>Music</li>
+                    <li><span><i class="fa-regular fa-map"></i></span><br>Travel</li>
+                </ul>
+            </div>
+          
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- ------------projects----------- -->
+      <div id="projects">
+         <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="Projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>SMART BLIND STICK USING ARDUINO AND ULTRASONIC
+                        SENSOR</h2>
+                        <p> <ul><li> Accurately measures the distance between the blind person and obstacles.</li>
+                            <li>Provides precise distance calculations for enhanced safety and navigation.</li>
+                        <li>Utilizes advanced technology to ensure accurate and reliable measurements. </li></ul> </p> 
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                    <h2>CPW FED CIRCULAR DUAL BAND PATCH ANTENNA USING HFSS</h2>
+                        <p><ul><li>Multiband CPW-fed microstrip patch antenna designed using HFSS.</li>
+                            <li>Exhibits good resonant frequencies.</li>
+                           <li> Demonstrates favorable radiation patterns for effective performance.></li></ul></p>
+                        <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>CPW FED CIRCULAR DUAL BAND PATCH ANTENNA USING HFSS</h2>
+                        <p>Multiband CPW-fed microstrip patch antenna designed using HFSS.
+                            Exhibits good resonant frequencies.
+                            Demonstrates favorable radiation patterns for effective performance.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+         </div>
+      </div>
+      <!-- ----------portfoilo--- -->
+
+      <!-- <div id ="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png"> 
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                    <p>The app conncets you to talented people around the world.
+                        download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                    <p>the app conncets you to talented people around the world.
+                        download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>online shopping App</h3>
+                    <p>the app conncets you to talented people around the world.
+                        download it from play store</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div> -->
+
+      <!-- ---------------contact----------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Pradeepkumarnadagana@gmail.com </p>
+                    <p><i class="fa-solid fa-square-phone"></i>7330732302 </p>
+                    <div class="Social-icons">
+                        <a href="https://www.linkedin.com/in/n-pradeep-1890a7288 "><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/pradeep_adwiteeya?igsh=ZnMzOWJ3eHRzdGRj"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Pradeep-kumar-Nadagana"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-linkedin-in"></i></a>  -->
+                    </div>
+                    <a href="./images/resume.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">submit</button>
+                </form> 
+                <span id="msg"></span>
+            </div>
+        </div> 
+        <div class="copyright"> 
+            <p>copyright @ pradeep.Made with <i class="fa-solid fa-heart"></i> </p> 
+        </div>
+    </div>
+`
+    <script>
+        
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+
+          
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz2_tuIpUR-NajIAxIs0ojMOtEavw8lMuX4IV6Z0S2D49DhhZUm7qWx36TwrnlP7xD4TQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+ </body>
+ </html> 
